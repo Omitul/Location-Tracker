@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "237595596541",
+    "project_id": "ltracker-64a48",
+    "storage_bucket": "ltracker-64a48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237595596541:android:67a84de995b3fa21afd094",
+        "android_client_info": {
+          "package_name": "com.example.ltracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNnMFwA4bC72F6VDHayU2KGanHixuQHN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
