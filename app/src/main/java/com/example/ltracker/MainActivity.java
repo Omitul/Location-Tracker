@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<DataSnapshot> task) {
                 if (task.isSuccessful()) {
                     if (task.getResult().exists()) {
-                        Log.d("ReadData", "Data read successfully");
+                       // Log.d("ReadData", "Data read successfully");
+                        Toast.makeText(MainActivity.this, "Location  found!", Toast.LENGTH_LONG).show();
                         DataSnapshot busData = task.getResult();
 
                         // Retrieve latitude and longitude directly
@@ -102,8 +103,8 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
                     } else {
-                        Log.d("ReadData", "Data doesn't exist");
-                        Toast.makeText(MainActivity.this, "Location didn't found!", Toast.LENGTH_LONG).show();
+                       // Log.d("ReadData", "Data doesn't exist");
+                        Toast.makeText(MainActivity.this, "Location is not  found!", Toast.LENGTH_LONG).show();
                     }
                 } else {
                     Log.d("ReadData", "Error reading data: ", task.getException());
