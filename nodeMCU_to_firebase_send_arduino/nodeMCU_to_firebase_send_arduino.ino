@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>
 #include <TinyGPS++.h>
 #include <SoftwareSerial.h>
-             //we are using the ESP8266   // uncomment this line if you are using esp8266 and comment the line above
-#include <FirebaseESP8266.h>
+#include <FirebaseESP8266.h> //we are using the ESP8266
+
 SoftwareSerial SerialGPS(4, 5); 
 TinyGPSPlus gps;
 //Provide the token generation process info.
