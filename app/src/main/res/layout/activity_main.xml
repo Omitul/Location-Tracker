@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EC2A2A">
+    android:background="#1C0303">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/uni"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -48,7 +58,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="356dp"
-            android:backgroundTint="#023E45"
+            android:backgroundTint="#090D3A"
             android:text="Get Location"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.49"
@@ -75,7 +85,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Latitude:"
-                android:textColor="#302C2C"
+                android:background="#E1CB0C"
+                android:textColor="#393737"
                 android:layout_marginStart="20dp"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -87,6 +98,7 @@
                 android:text=""
                 android:textColor="#FFFF00"
                 android:layout_marginStart="5dp"
+                android:background="#1E191712"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -102,9 +114,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Longitude:"
-                android:textColor="#302C2C"
+                android:textColor="#393737"
                 android:layout_marginStart="20dp"
                 android:textSize="20sp"
+                android:background="#E1CB0C"
                 android:textStyle="bold" />
 
             <TextView
@@ -114,6 +127,7 @@
                 android:text=""
                 android:textColor="#FFFF00"
                 android:layout_marginStart="5dp"
+                android:background="#1E191712"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -129,7 +143,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Map: "
-                android:textColor="#302C2C"
+                android:textColor="#393737"
                 android:layout_marginStart="20dp"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -138,9 +152,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:textColor="#00FF00"
+                android:textColor="#02ED02"
                 android:layout_marginStart="5dp"
+                android:background = "#046B78"
                 android:textSize="20sp" />
         </LinearLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/bus_schedule_btn"
+            android:layout_width="219dp"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="700dp"
+            android:backgroundTint="#4553EF"
+            android:text="Bus Schedule" />
+    </RelativeLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

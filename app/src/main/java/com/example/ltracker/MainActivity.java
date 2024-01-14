@@ -1,7 +1,9 @@
 package com.example.ltracker;
+import android.app.Dialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,13 +21,15 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.app.Dialog;
+import android.widget.ImageView;
 
 
 public class MainActivity extends AppCompatActivity {
     EditText etBusId;
     TextView tvLatitude, tvLongitude, tvmap;
     DatabaseReference reference;
-
+    Dialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +52,27 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
+        });
+
+        /// for the bus schedule
+        dialog = new Dialog(this);
+        findViewById(R.id.bus_schedule_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("MainActivity", "onClick method invoked");
+                try {
+                    dialog = new Dialog(MainActivity.this);
+                    ImageView imageView = new ImageView(MainActivity.this);
+
+                    imageView.setImageResource(R.drawable.bus_schedule);
+
+                    dialog.setContentView(imageView);
+
+                    dialog.show();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
         });
     }
 
@@ -78,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                         // setting the values in the field in string format, because only strings are allowed to set
                         tvLatitude.setText(String.valueOf(Latitude));
                         tvLongitude.setText(String.valueOf(Longitude));
-                        tvmap.setText(mapLink);
+                        tvmap.setText("Google Map");
                         Intent intent = new Intent(Intent.ACTION_VIEW);
                         intent.setData(Uri.parse(mapLink));
 
