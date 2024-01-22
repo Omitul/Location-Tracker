@@ -1,0 +1,20 @@
+{
+    "name": "TinyGPSMinus",
+    "version": "1.0.0",
+    "keywords": "gps,NMEA,APRS,Arduino,library",
+    "description": "A smaller and simpler TinyGPS fork with fewer features.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/EricAndrechek/TinyGPSMinus.git"
+    },
+    "authors": [
+        {
+            "name": "Eric Andrechek",
+            "email": "ericandrechek@gmail.com",
+            "url": "https://github.com/EricAndrechek/TinyGPSMinus",
+            "maintainer": true
+        }
+    ],
+    "frameworks": "arduino",
+    "platforms": "*"
+  }

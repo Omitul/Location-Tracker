@@ -85,7 +85,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Latitude:"
-                android:background="#E1CB0C"
                 android:textColor="#393737"
                 android:layout_marginStart="20dp"
                 android:textSize="20sp"
@@ -117,7 +116,7 @@
                 android:textColor="#393737"
                 android:layout_marginStart="20dp"
                 android:textSize="20sp"
-                android:background="#E1CB0C"
+
                 android:textStyle="bold" />
 
             <TextView
@@ -154,7 +153,6 @@
                 android:text=""
                 android:textColor="#02ED02"
                 android:layout_marginStart="5dp"
-                android:background = "#046B78"
                 android:textSize="20sp" />
         </LinearLayout>
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

@@ -1,0 +1,50 @@
+#######################################
+# Syntax Coloring Map for TinyGPSMinus
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+TinyGPSMinus    KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+encode	KEYWORD2
+get_latitude	KEYWORD2
+get_longitude	KEYWORD2
+get_pos_age    KEYWORD2
+get_datetime	KEYWORD2
+altitude	KEYWORD2
+speed	KEYWORD2
+course	KEYWORD2=
+stats	KEYWORD2
+ambiguity	KEYWORD2
+crack_datetime	KEYWORD2
+f_altitude	KEYWORD2
+f_course	KEYWORD2
+f_speed_knots	KEYWORD2
+f_speed_mph	KEYWORD2
+f_speed_mps	KEYWORD2
+f_speed_kmph	KEYWORD2
+f_hdop	KEYWORD2
+f_ambiguity	KEYWORD2
+hdop	KEYWORD2
+cardinal	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+GPS_INVALID_AGE	LITERAL1
+GPS_INVALID_ANGLE	LITERAL1
+GPS_INVALID_ALTITUDE	LITERAL1
+GPS_INVALID_DATE	LITERAL1
+GPS_INVALID_TIME	LITERAL1
+GPS_INVALID_HDOP	LITERAL1
+GPS_INVALID_SATELLITES	LITERAL1
+GPS_INVALID_F_ANGLE	LITERAL1
+GPS_INVALID_F_ALTITUDE	LITERAL1
+GPS_INVALID_F_SPEED	LITERAL1
