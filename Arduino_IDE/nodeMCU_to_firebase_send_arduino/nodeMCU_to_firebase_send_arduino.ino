@@ -16,10 +16,10 @@ TinyGPSPlus gps;
 #define WIFI_PASSWORD "howareyou"
 
 // Insert Firebase project API Key
-#define API_KEY "AIzaSyDNnMFwA4bC72F6VDHayU2KGanHixuQHN8"
+//#define API_KEY "AIzaSyDNnMFwA4bC72F6VDHayU2KGanHixuQHN8"
 
 // Insert RTDB URLefine the RTDB URL */
-#define DATABASE_URL "https://ltracker-64a48-default-rtdb.asia-southeast1.firebasedatabase.app/" 
+//#define DATABASE_URL "https://ltracker-64a48-default-rtdb.asia-southeast1.firebasedatabase.app/" 
 
 //Define Firebase Data object
 FirebaseData fbdo;
