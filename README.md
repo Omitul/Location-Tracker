@@ -1,4 +1,5 @@
-🔰 Location Tracker for University Transportation System
+🔰 Location Tracker for University Transportation System.
+
 • An IOT based project for tracking the bus with hardware and software.
 
 • Hardware: NodeMcu/Esp8266 version 3, Neo6m gps module version 2, wires.
