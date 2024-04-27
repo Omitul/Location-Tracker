@@ -3,7 +3,7 @@
 
 
 
-## 🔰 Location Tracker for University Transportation System.
+## 🔰 Location Tracker for University Transportation System
 
 ## A Simple Overview
 
